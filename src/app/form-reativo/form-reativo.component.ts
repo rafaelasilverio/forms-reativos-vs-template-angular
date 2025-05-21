@@ -20,6 +20,10 @@ export class FormReativoComponent implements OnInit {
   constructor(private fb: FormBuilder) {}
 
   ngOnInit() {
+    this.criarFormulario();
+  }
+
+  private criarFormulario(): void {
     this.formularioUsuario = this.fb.group({
       nome: ['', [Validators.required, Validators.minLength(3)]],
       email: ['', [Validators.required, Validators.email]],
@@ -31,7 +35,7 @@ export class FormReativoComponent implements OnInit {
 
   aoEnviar() {
     alert(
-      `Formulário enviado (template-driven): ${this.formularioUsuario.value.nome} teve seu cadastro bem sucedido!`
+      `Formulário enviado (reativo): ${this.formularioUsuario.value.nome} teve seu cadastro bem sucedido!`
     );
   }
 }
