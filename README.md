@@ -6,6 +6,10 @@
 
 Projeto com dois formulários de cadastro idênticos visualmente, implementados com as diferentes abordagens do Angular para fins educacionais em um artigo técnico.
 
+![Imagem do formulário orientado a template](https://i.imgur.com/DH5pwzK.png)
+
+![Imagem do formulário reativo](https://i.imgur.com/dJesniW.png)
+
 ## ✨ Funcionalidades
 
 - **Formulário Template-Driven**
